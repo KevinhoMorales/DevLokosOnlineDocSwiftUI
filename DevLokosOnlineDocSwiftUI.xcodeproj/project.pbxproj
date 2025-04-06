@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2A2FF6532D9C6CA000A81EB1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2A2FF6522D9C6CA000A81EB1 /* FirebaseAnalytics */; };
+		2A2FF6552D9C6CA000A81EB1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2A2FF6542D9C6CA000A81EB1 /* FirebaseFirestore */; };
+		2A2FF65F2D9C6D2300A81EB1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2A2FF65E2D9C6D2300A81EB1 /* FirebaseAuth */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2A2FF6282D9C6BBC00A81EB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2FF6532D9C6CA000A81EB1 /* FirebaseAnalytics in Frameworks */,
+				2A2FF65F2D9C6D2300A81EB1 /* FirebaseAuth in Frameworks */,
+				2A2FF6552D9C6CA000A81EB1 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,7 @@
 				2A2FF61B2D9C6BBA00A81EB1 /* DevLokosOnlineDocSwiftUI */,
 				2A2FF62A2D9C6BBC00A81EB1 /* DevLokosOnlineDocSwiftUITests */,
 				2A2FF6342D9C6BBC00A81EB1 /* DevLokosOnlineDocSwiftUIUITests */,
+				2A2FF65D2D9C6D2300A81EB1 /* Frameworks */,
 				2A2FF61A2D9C6BBA00A81EB1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +100,13 @@
 				2A2FF6312D9C6BBC00A81EB1 /* DevLokosOnlineDocSwiftUIUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2A2FF65D2D9C6D2300A81EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +129,9 @@
 			);
 			name = DevLokosOnlineDocSwiftUI;
 			packageProductDependencies = (
+				2A2FF6522D9C6CA000A81EB1 /* FirebaseAnalytics */,
+				2A2FF6542D9C6CA000A81EB1 /* FirebaseFirestore */,
+				2A2FF65E2D9C6D2300A81EB1 /* FirebaseAuth */,
 			);
 			productName = DevLokosOnlineDocSwiftUI;
 			productReference = 2A2FF6192D9C6BBA00A81EB1 /* DevLokosOnlineDocSwiftUI.app */;
@@ -195,6 +215,9 @@
 			);
 			mainGroup = 2A2FF6102D9C6BBA00A81EB1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2A2FF6512D9C6CA000A81EB1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2A2FF61A2D9C6BBA00A81EB1 /* Products */;
 			projectDirPath = "";
@@ -392,11 +415,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DevLokosOnlineDocSwiftUI/DevLokosOnlineDocSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 100;
 				DEVELOPMENT_TEAM = 5S22W76BBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Online Doc";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -411,15 +435,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevinhomorales.DevLokosOnlineDocSwiftUI;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinhomorales.devlokosonlinedocswiftui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Debug;
@@ -431,11 +456,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DevLokosOnlineDocSwiftUI/DevLokosOnlineDocSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 100;
 				DEVELOPMENT_TEAM = 5S22W76BBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Online Doc";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -450,15 +476,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevinhomorales.DevLokosOnlineDocSwiftUI;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinhomorales.devlokosonlinedocswiftui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Release;
@@ -593,6 +620,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A2FF6512D9C6CA000A81EB1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A2FF6522D9C6CA000A81EB1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A2FF6512D9C6CA000A81EB1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2A2FF6542D9C6CA000A81EB1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A2FF6512D9C6CA000A81EB1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2A2FF65E2D9C6D2300A81EB1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A2FF6512D9C6CA000A81EB1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A2FF6112D9C6BBA00A81EB1 /* Project object */;
 }
